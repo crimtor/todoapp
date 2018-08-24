@@ -1,0 +1,74 @@
+body {
+  background: #aa4b6b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+i {
+  height: 100%;
+}
+
+h1 {
+  background-color: steelblue;
+  color: white;
+  margin: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  line-height: 2rem;
+  height: 2rem;
+  background-color: white;
+}
+li:nth-child(2n) {
+  background-color: #e6e6e6;
+}
+
+input {
+  background-color: #e6e6e6;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+}
+input:focus {
+  background-color: white;
+  border: 3px solid steelblue;
+  outline: none;
+}
+
+li span {
+	background: #e74c3c;
+	text-align: center;
+	color: white;
+	width: 0;
+	display: inline-block;
+	transition: 0.3s linear;
+	opacity: 0;
+}
+
+li:hover span {
+	width: 30px;
+	opacity: 1.0;
+}
+
+#container {
+  margin: 10% auto;
+  width: 400px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.done {
+  color: grey;
+  text-decoration: line-through;
+}
+.fa-pencil-alt {
+  float: right;
+}
